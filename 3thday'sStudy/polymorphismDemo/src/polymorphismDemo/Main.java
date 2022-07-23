@@ -1,0 +1,29 @@
+package polymorphismDemo;
+
+public class Main {
+
+		public static void main(String[] args) {
+//		EmailLogger logger = new EmailLogger();
+//		logger.Log("Log mesajı");
+//
+//	
+	
+	BaseLogger[] loggers = new BaseLogger[] {new ConsoleLogger(),new FileLogger(), new EmailLogger(), new DatabaseLogger()};
+	//hepsinin atası bu bu yüzden baselogger loggerların referansını tutabilir
+	//üç elemanlı herbiri farklı iş yapan ama hepsi baselogger türünden eleman ekledik.
+	//istediğim zaman yeni bir logger ekleyip silebilirim plug and play
+	
+	
+	for (BaseLogger logger : loggers) {
+		logger.log("Log mesajı  ");
+		
+	}
+	
+	System.out.println("........................................");
+	//=>
+	//artık CustomerManager() parametre olarak hangisini verirsem o loglama yapar.
+	CustomerManager customerManager = new CustomerManager(new FileLogger());
+	customerManager.add();
+ 
+		}
+}
