@@ -1,7 +1,0 @@
-package overriding;
-
-public class BaseKrediManager {
-	public double hesapla(double) {
-		
-	}
-}
