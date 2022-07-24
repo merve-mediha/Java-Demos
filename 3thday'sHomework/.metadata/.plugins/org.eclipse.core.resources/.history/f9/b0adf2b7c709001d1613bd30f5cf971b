@@ -1,0 +1,13 @@
+package inheritance;
+
+public class CustomerManager extends PersonManager{
+	/* public void List() {
+		System.out.println("Müþteri listelendi");
+	}
+	
+	public void Add() {
+		System.out.println("Müþteri eklendi"); 
+		}   */
+	
+	//bunlarý yazmak yerine Persondan entend etmek kalýtým almak yeterli
+}

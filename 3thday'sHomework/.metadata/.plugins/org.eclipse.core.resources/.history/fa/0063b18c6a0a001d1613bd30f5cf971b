@@ -1,0 +1,7 @@
+package polymorphismDemo;
+
+public class CustomerManager {
+	public void add() {
+		System.out.println("Müþteri Eklendi ");
+	}
+}

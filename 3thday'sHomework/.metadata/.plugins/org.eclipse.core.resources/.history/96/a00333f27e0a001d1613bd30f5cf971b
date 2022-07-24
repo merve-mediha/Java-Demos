@@ -1,0 +1,14 @@
+package overriding;
+
+public class Main {
+
+	public static void main(String[] args) {
+		BaseKrediManager[] krediManager = new BaseKrediManager[] {new OgretmenKrediManager(),new TarımKrediManager()};
+		
+		for (BaseKrediManager krediManager : krediManagers) {
+			krediManager.hesapla(1000);
+			
+		}
+	}
+
+}

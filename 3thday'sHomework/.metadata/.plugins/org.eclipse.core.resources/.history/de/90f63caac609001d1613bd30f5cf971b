@@ -1,0 +1,7 @@
+package inheritance;
+
+public class CustomerManager {
+	public void Lis() {
+		System.out.println("Müþteri listelendi");
+	}
+}

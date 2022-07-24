@@ -1,0 +1,21 @@
+package polymorphismDemo;
+
+public class Main {
+
+		public static void main(String[] args) {
+//		EmailLogger logger = new EmailLogger();
+//		logger.Log("Log mesajý");
+//
+//	
+	
+	BaseLogger[] loggers = new BaseLogger[] {new ConsoleLogger(),new FileLogger(), new EmailLogger(), new DatabaseLogger()};
+	//hepsinin atasý bu bu yüzden baselogger loggerlarýn referansýný tutabilir
+	//üç elemanlý herbiri farklý iþ yapan ama hepsi baselogger türünden eleman ekledik.
+	
+	for (BaseLogger logger : loggers) {
+		logger.Log("Log mesajý  ");
+		
+	}
+ 
+		}
+}

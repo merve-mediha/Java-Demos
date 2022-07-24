@@ -1,0 +1,21 @@
+package inheritance;
+
+public class EmployeeManager extends PersonManager{
+	/*
+	public void List() {
+		System.out.println("Müþteri listelendi");
+	}
+	
+	public void Add() {
+		System.out.println("Müþteri eklendi"); 
+		}
+	//Employee ve Customer ikisinde ortak operasyonlar var
+	 * 
+	 *
+	 */
+	
+	public void BestEmployee() {
+		System.out.println("Ayýn elemaný getirildi");
+	}
+
+}
